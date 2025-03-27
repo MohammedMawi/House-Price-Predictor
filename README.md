@@ -4,63 +4,59 @@ This was one of my first machine learning projects, where I built a regression m
 # About the Dataset
 The dataset includes information like:
 
-Area of the house
+- Area of the house
 
-Number of bedrooms and bathrooms
+- Number of bedrooms and bathrooms
 
-Whether it had a basement, guestroom, AC, etc.
+- Whether it had a basement, guestroom, AC, etc.
 
-Furnishing status and location preferences
+- Furnishing status and location preferences
 
-And the target: price
+- And the target: price
 
 It wasn’t super detailed (e.g., no neighborhood or age info), but it was enough to practice working with structured features and handling categorical data.
 
 # What I Did
 Cleaned and prepared the data using Pandas
 
-Combined some features (like bedrooms + bathrooms = total rooms)
+- Combined some features (like bedrooms + bathrooms = total rooms)
 
-Removed outliers using IQR
+- Removed outliers using IQR
 
-One-hot encoded categorical columns
+- One-hot encoded categorical columns
 
-Trained two models:
+- Trained two models:
 
-Linear Regression
+  - Linear Regression
 
-Random Forest Regressor
+  - Random Forest Regressor
 
-Evaluated them using Mean Absolute Error and R² Score
+- Evaluated them using Mean Absolute Error and R² Score
 
 # Results
-The best R² I got was around 63%
-
-MAE stayed around 700k, which makes sense considering the wide range of house prices
-
-The model worked decently on higher-end homes, but it struggled with mid-range predictions — mostly due to limited features in the dataset
+The best R² I got was around 63%. MAE stayed around 700k, which makes sense considering the wide range of house prices. The model worked decently on higher-end homes, but it struggled with mid-range predictions — mostly due to limited features in the dataset
 
 # What I Learned
-How to prepare a dataset for machine learning
+- How to prepare a dataset for machine learning
 
-The importance of feature engineering
+- The importance of feature engineering
 
-How to evaluate regression models beyond just accuracy
+- How to evaluate regression models beyond just accuracy
 
-That sometimes your model isn’t “bad” — the data just has limitations
+- That sometimes your model isn’t “bad” — the data just has limitations
 
-Most importantly: done is better than perfect — and I finished it!
+- Most importantly: done is better than perfect — and I finished it!
 
 # Tools & Libraries
-Python
+- Python
 
-Pandas
+- Pandas
 
-Scikit-learn
+- Scikit-learn
 
-Matplotlib / Seaborn
+- Matplotlib / Seaborn
 
-Jupyter Notebook
+- Jupyter Notebook
 
 # What’s Next
 I’m thinking about coming back to this project later with a better dataset (maybe one focused on Toronto), adding more meaningful features, and building a web-based version with a simple UI for users to interact with.
